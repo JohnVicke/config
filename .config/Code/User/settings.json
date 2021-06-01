@@ -48,6 +48,19 @@
     {
       "before": ["<leader>", "q"],
       "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["[", "g"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["]", "g"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showHover"],
+      "when": "editorTextFocus"
     }
   ],
 
@@ -78,7 +91,6 @@
     "statusBar.noFolderBackground": "#3c3836",
     "statusBar.debuggingBackground": "#3c3836"
   },
-
   "workbench.iconTheme": "eq-material-theme-icons-ocean",
   "editor.formatOnSave": true,
   "editor.fontFamily": "JetBrains Mono",
@@ -99,11 +111,27 @@
     "**/.classpath": true,
     "**/.project": true,
     "**/.settings": true,
-    "**/.factorypath": true
+    "**/.factorypath": true,
+    "node_modules": true
   },
-
-  "workbench.startupEditor": "newUntitledFile",
   "window.menuBarVisibility": "compact",
-  "glassit.alpha": 255,
-  "workbench.editor.enablePreview": false
+  "glassit.alpha": 250,
+  "workbench.editor.enablePreview": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "window.restoreWindows": "none",
+  "advancedNewFile.exclude": {
+    "node_modules": true,
+    "node_modules_electron": true,
+    "dev": true,
+    "dist": true
+  },
+  "advancedNewFile.showInformationMessages": true,
+  "advancedNewFile.convenienceOptions": [
+    "last",
+    "current",
+    "root"
+  ],
+  "workbench.tips.enabled": false,
+  "workbench.tree.renderIndentGuides": "always"
 }
