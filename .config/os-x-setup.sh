@@ -8,6 +8,7 @@ brew install --cask alfred
 brew install --cask visual-studio-code
 brew install --cask iterm2
 brew install --cask brave-browser
+brew install --cask rectangle
 
 brew install git
 brew install neovim
